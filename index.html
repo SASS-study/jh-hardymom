@@ -4,20 +4,36 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 구글 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- 스타일시트 -->
+  <link rel="stylesheet" href="style.css" />
+
   <title>인제대학교 백중앙의료원</title>
 </head>
 <body>
+  <!-- 헤더영역 시작 -->
   <header class="header">
     <h1 class="logo">
       <a href="/">
         <img src="./images/logo.png" alt="인제대학교 백중앙의료원의 로고" />
       </a>
     </h1>
-    <ul class="select-language">
-      language
-      <li class="language-list"><a href="/">english</a></li>
-    </ul>
-    <nav class="gnb-wrap">
+    <div class="select-language">
+      <button type="button" aria-label="다국어 페이지로 이동" class="select-language-btn">language</button>
+      <ul class="language-list">
+        <li><a href="/">eng</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- 헤더영역 끝 -->
+  <!-- 네비게이션 시작 -->
+  <nav class="navigation">
+    <div class="gnb-wrap">
       <ul class="gnb">
         <li class="gnb-depth1"><a href="/">백병원 소개</a></li>
         <li class="gnb-depth1"><a href="/">산하기관</a></li>
@@ -25,8 +41,9 @@
         <li class="gnb-depth1"><a href="/">백병원 역사관</a></li>
         <li class="gnb-depth1"><a href="/">건강정보</a></li>
       </ul>
-      <button type="button" class="search-button">검색</button>
-    </nav>
-  </header>
+      <button type="button" class="search-button" aria-label="검색버튼"></button>
+    </div>
+  </nav>
+  <!-- 네비게이션 끝 -->
 </body>
 </html>
