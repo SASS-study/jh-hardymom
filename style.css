@@ -461,3 +461,80 @@ a {
   height: 16px;
   transform: translateY(-50%);
 }
+
+/* 백병원 소식 시작 */
+.news {
+  padding: 85px 0;
+  background-color: #e4e8f0;
+}
+
+.news .section-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.news-card-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 1300px;
+  margin: 0 auto;
+}
+
+/* 카드 컨텐츠 */
+.news .card {
+  position: relative;
+  width: 24%;
+  height: 387px;
+  padding: 25px;
+  color: #fff;
+  line-height: 1.5;
+  background-color: #fff;
+  border: 1px solid #b1b5b9;
+  border-radius: 20px;
+}
+
+.news .card .tag {}
+
+.news .card .more-btn {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #797c7f;
+  border-radius: 40px;
+}
+
+.news .card .more-btn::before,
+.news .card .more-btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 16px;
+  height: 2px;
+  background-color: #797c7f;
+}
+
+.news .card .more-btn::after {
+  width: 2px;
+  height: 16px;
+  transform: translateY(-50%);
+}
+
+.news .card .news-content {}
+
+.news-content .recent-content {}
+
+.recent-content h3 {}
+
+.recent-content p {}
+
+.recent-content time {}
+
+.recent-content .author {}
